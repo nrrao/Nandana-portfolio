@@ -176,6 +176,12 @@ width:100%;
   margin: 0px;
 }
 
+.links a{
+  color:#1fab89;
+  font-weight: bold;
+  background-color: #ecf4f3;
+}
+
 .tech-info img{
   height: 40px;
   width:40px;
