@@ -33,46 +33,46 @@ h3{
 
 nav {
   width: 100%;
-  height: 5rem;
+  height: 3rem;
   position:fixed;
   background-color:#ecf4f3;
- 
 }
 
-.desktop-nav {
-  float: right;
-  width: 100%;
-  overflow: hidden;
-}
-
-.desktop-nav a {
-  float: left;
+.navbar a {
+  display: none;
   color: #1fab89;
   text-decoration: none;
+  margin-top: 1rem;
   text-align: center;
-  margin-top: 2rem;
+  margin-left: 1rem;
 }
 
-.desktop-nav a {
+.navbar a.icon {
+  float: right;
+  display: block;
+}
+
+.navbar a:hover {
+  color: black;
   cursor: pointer;
-  margin-left: 30px;
 }
 
-.desktop-nav .icon {
-  display: none;
+
+.navbar.responsive {position: relative; background-color:#ecf4f3;}
+.navbar.responsive .icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.navbar.responsive a:not(:last-child) {
+  float: none;
+  display: block;
+  text-align: left;
+  background-color:#ecf4f3;
+  margin-right: 2rem;
 }
 
-.desktop-nav a:hover{
 
-color:black;
-
- 
-}
-
-.desktop-nav a:active {
-
-color:black;
-}
 
 main {
   display: flex;
@@ -101,7 +101,7 @@ main section hr {
 }
 
 #skills {
-  padding: 1.5rem;
+  
   width: 90%;
   display: flex;
   flex-direction: column;
@@ -111,11 +111,24 @@ main section hr {
 
 #skills h2 {
   font-size: 2.5rem;
-  margin-bottom: 0
+  margin: 0
+}
+#skills h3{
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.list-of-skills{
+  padding: 0;
+  margin:0;
+}
+
+li{
+  list-style: none;
 }
 
 hr{
-  border:dotted #EAF6F6 6px;
+  border:dotted  #1fab89 6px;
   border-bottom: none;
   width:4%
 }
@@ -136,12 +149,16 @@ hr{
 }
 .project-card img{
   width: 90%;
-  border:#EAF6F6 6px;
+  border: #1fab89 6px;
 }
 
 #projects h2 {
   font-size: 2.5rem;
-  margin-bottom: 0
+  margin: 0
+}
+#projects h3{
+  margin-top: 1rem;
+  margin-bottom: 0;
 }
 
 
@@ -159,36 +176,50 @@ hr{
   flex: 1;
 }
 
-
+.tech{
+  width:90%;
+}
 
 .tech-used{
 display: flex;
-justify-content: space-evenly;
+justify-content: space-between;
 align-items: center;
 width:100%;
+}
+.tech-info h5{
+  margin:0;
+}
+.tech-info img{
+  height: 40px;
+  width:40px;
 }
 
 .links {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  width: 50%;
-  margin: 0px;
+  width: 95%;
+  
 }
 
 .links a{
   color:#1fab89;
   font-weight: bold;
   background-color: #ecf4f3;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 1rem;
+  padding: 12px 30px;
+  border-radius: 15px;
+  cursor: pointer;
+  
 }
-
-.tech-info img{
-  height: 40px;
-  width:40px;
+a:hover{
+  color:black;
+  
 }
 
 footer {
-  padding: 1% 0;
   background-color:#ecf4f3;
   height: 5rem;
 }
@@ -202,26 +233,46 @@ footer h3{
   justify-content: space-evenly;
 }
 
-@media screen and (max-width: 400px) {
-  .desktop-nav a {display: none;}
-  .desktop-nav a.icon {
-    float: right;
-    display: block;
-  }
+.contact-unit a{
+  text-decoration: none;
+  color: #1fab89;
+  font-size: 1rem;
+  cursor: pointer;
+ 
 }
 
-@media screen and (max-width: 400px) {
-  .desktop-nav.responsive {position: relative; background-color:#ecf4f3;}
-  .desktop-nav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .desktop-nav.responsive a:not(:last-child) {
-    float: none;
-    display: block;
-    text-align: left;
+.contact-unit a:hover{
+  color:black;
+}
+
+@media screen and (min-width:400px){
+  nav {
+    width: 100%;
+    height: 5rem;
+    position:fixed;
     background-color:#ecf4f3;
-    margin-right: 2rem;
   }
+
+  .navbar a {
+    display: inherit;
+    float: left;
+    color: #1fab89;
+    text-decoration: none;
+    margin-top: 1.5rem;
+    text-align: center;
+    margin-left: 1rem;
+  }
+  .navbar a.icon {
+    float: right;
+    display: none;  
+  }
+
+  .project-card img{
+    width: 60%;
+    border:#EAF6F6 6px;
+  }
+
+  .tech{
+    width:40%;
+    }
 }

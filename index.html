@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>HTML wireframe</title>
+    <title>Nandana's Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="/YOUR_PATH/favicon.ico" rel="icon" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
     <link rel="icon" href="images/blueN.ico">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather%7cMontserrat%7cSacramento&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <nav role="navigation"> 
-        <div class="desktop-nav" id="myTopNav">
+    <nav > 
+        <div class="navbar" id="myTopNav">
             <a href="#bio">About</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
@@ -22,74 +22,68 @@
               </a>
         </div>
     </nav>
-    <main role="main">
+    <main >
         <article id="bio">
-        <header role="banner">
+        <header>
            <h1>I'm Nandana</h1>
            <img class="myPic" src="./images/n.jpeg" alt="Nandana">
-        </header>
-        
-          <!--<h3>Hi</h3>-->
-         
+        </header>       
           <div class="bio-container">
               <p class="bio-text">I'm a Full stack Web Developer based in Philadelphia area. </p>
-              <p class="bio-text">I love to develop simple,clean,responsive Websites. </p>
+              <p class="bio-text">I love to develop simple, clean, responsive Websites. </p>
+              </div>
         </article>  
         <hr>    
         <section id="skills">
           <h2>Skills</h2>
-          
-          <div id="skill-wrapper">
-              <div class="skills-container">
-                  <h3 class="skill-header">Front-End</h2>
-                  <ul class="list-of-skills">
-                      
-                      <li>HTML</li>
-                      <li>CSS</li>
-                      <li>JavaScript</li>
-                      <li>Jquery</li>
-                  </ul>
-              </div>
-        </section>
+           <h3 class="skill-header">Front-End</h3>
+              <ul class="list-of-skills">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Jquery</li>
+              </ul>
+         </section>
         <hr>
         <section id="projects">
           <h2>Projects</h2>
-            <div class="projects-container">
-              <div class="project-card">
+            <div class="project-card">
                 <h3 class="project-name">Bookmark</h3>
                 <p>User can store and rate their custom bookmarks. </p>
-                    <img src="./images/Capture.PNG" alt="Bookmark screenshot">
-                </div>
-                <section class="project-information">
-                    <section class="links">
+                <img src="./images/Capture.PNG" alt="Bookmark screenshot">
+            </div>
+                <div class="project-information">
+                    <div class="links">
                      <a href="https://github.com/thinkful-ei-gecko/nandana-bookmarks-app" target="_blank" class="project-button">Code</a>
                      <a href="https://thinkful-ei-gecko.github.io/nandana-bookmarks-app/" target="_blank" class="project-button">Link</a>
-                    </section>
-                </section>
-                <h3 class="made-with">Made With:</h3>
-                <section class="tech-used">
-                    <span class="tech-info">
+                </div>
+                
+                <section class="tech" >
+                <h3 class="made-with">Made With:</h3> 
+                <div class="tech-used">
+                <div class="tech-info">
                         <img src="./images/html.jpg" alt="HTML logo" />
-                        <h3 class="tech-header">HTML</h3>
-                    </span>
-                    <span class="tech-info">
+                        <h5 class="tech-header">HTML</h5>
+                </div>
+                <div class="tech-info">
                         <img src="./images/css.png" alt="CSS logo" />
-                        <h3 class="tech-header">css</h3>
-                    </span>
-                    <span class="tech-info">
+                        <h5 class="tech-header">css</h5>
+                    </div>
+                    <div class="tech-info">
                         <img src="./images/js.png" alt="Javascript logo" />
-                        <h3 class="tech-header">Javascript</h3>
-                    </span>
-                    <span class="tech-info">
+                        <h5 class="tech-header">Javascript</h5>
+                    </div>
+                        <div class="tech-info"> 
                         <img src="./images/jquery.png" alt="Javascript logo" />
-                        <h3 class="tech-header">JQuery</h3>
-                    </span>
+                        <h5 class="tech-header">JQuery</h5>
+                    </div>
+                </div>
                 </section>
             </div>
         </section>
 
     </main>
-    <footer role="content-info" id="contact"> 
+    <footer id="contact"> 
         <h3>Contact Info</h3>
         <div class="contact-info">
             <span class="contact-unit">
