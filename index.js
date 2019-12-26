@@ -1,7 +1,4 @@
 
-
-
-
 // Event Listeners
 $('nav').find('a').not( ':last-child' ).click(function(e) {
   e.preventDefault();
