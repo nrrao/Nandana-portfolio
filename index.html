@@ -1,171 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Nandana's Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="/YOUR_PATH/favicon.ico" rel="icon" type="image/x-icon" />
-    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <link rel="icon" href="images/blueN.ico">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather%7cMontserrat%7cSacramento&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="icon" href="images/blueN.ico" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Merriweather%7cMontserrat%7cSacramento&display=swap" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
+
 <body>
-    <nav > 
-        <div class="navbar" id="myTopNav">
-            <a href="#bio" >About</a>
-            <a href="#skills" >Skills</a>
-            <a href="#projects" >Projects</a>
-            <a href="#contact" >Contact</a>
-            <a  class="icon"  >
-                <i class="fa fa-bars"  id="fafa"></i>
-              </a>
+    <nav>
+        <div class="navbar" id="nav-bar">
+            <a href="#bio" onclick="toggleMobileMenu()">About</a>
+            <a href="#skills" onclick="toggleMobileMenu()">Skills</a>
+            <a href="#projects" onclick="toggleMobileMenu()">Projects</a>
+            <a href="#contact" onclick="toggleMobileMenu()">Contact</a>
         </div>
+        <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
+            <i id="icon" class="fa fa-bars"></i>
+        </a>
     </nav>
-    <main >
+
+    <main>
         <article id="bio">
-        <header>
-           <h1>I'm Nandana</h1>
-           <img class="myPic" src="./images/n.jpeg" alt="Nandana">
-        </header>       
-          <div class="bio-container">
-              <p class="bio-text">I'm a Full stack Web Developer based in Philadelphia area. </p>
-              <p class="bio-text">I love to develop simple, clean, responsive Websites. </p>
-              </div>
-        </article>  
-        <hr>    
-        <section id="skills">
-          <h2>Skills</h2>
-          <div class="skills">
-              <ul class="list-of-skills">
-                  
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>Jquery</li>
-                <li>Jest/Enzyme</li>
-              </ul>
-              <ul class="list-of-skills">
-                    
-                <li>Node.js</li>
-                <li>PostgreSQL</li>
-                <li>Express</li>
-                <li>REST API</li>
-                <li>Mocha</li>
-                <li>Supertest</li>
-              </ul>
+            <header>
+                <h1>I'm Nandana</h1>
+                <img class="myPic" src="./images/n.jpeg" alt="Nandana" />
+            </header>
+            <div class="bio-container">
+                <p class="bio-text">
+                    I'm a Full stack Web Developer based in Philadelphia area.
+                </p>
+                <p class="bio-text">
+                    I love to develop simple, clean, responsive Websites.
+                </p>
             </div>
-         </section>
-        <hr>
+        </article>
+        <hr />
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills">
+                <ul class="list-of-skills">
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>Jquery</li>
+                    <li>Jest/Enzyme</li>
+                </ul>
+                <ul class="list-of-skills">
+                    <li>Node.js</li>
+                    <li>PostgreSQL</li>
+                    <li>Express</li>
+                    <li>REST API</li>
+                    <li>Mocha</li>
+                    <li>Supertest</li>
+                </ul>
+            </div>
+        </section>
+        <hr />
         <section id="projects">
-          <h2>Projects</h2>
+            <h2>Projects</h2>
+
             <div class="project-card">
-                    <h3 class="project-name">Breadcrumbs</h3>
-                    <p>Decentralized News from 30k sources with ability to rank and comment by users. </p>
-                    <img src="./images/bclanding.PNG" alt="Bookmark screenshot">
+                <h3 class="project-name">Breadcrumbs</h3>
+                <p>
+                    Decentralized News from 30k sources with ability to rank and comment
+                    by users.
+                </p>
+                <img src="./images/bclanding.PNG" alt="Bookmark screenshot" />
+            </div>
+            <div class="project-information bb">
+                <div class="links">
+                    <a href="https://github.com/thinkful-ei-gecko/BreadCrumbs-Client" target="_blank"
+                        class="project-button">Code</a>
+                    <a href="https://breadcrumbs.now.sh/" target="_blank" class="project-button">Live</a>
                 </div>
-                    <div class="project-information">
-                        <div class="links">
-                         <a href="https://github.com/thinkful-ei-gecko/BreadCrumbs-Client" target="_blank" class="project-button">Code</a>
-                         <a href="https://breadcrumbs.now.sh/" target="_blank" class="project-button">Link</a>
-                    </div>
-                    
-                    <section class="tech" >
-                    <h3 class="made-with">Made With:</h3> 
+
+                <section class="tech">
+                    <h4 class="made-with">Made With</h4>
                     <div class="tech-used">
-                    <div class="tech-info">
-                            
+                        <div class="tech-info">
                             <h5 class="tech-header">React</h5>
+                        </div>
+                        <div class="tech-info">
+                            <h5 class="tech-header">Node.js</h5>
+                        </div>
+                        <div class="tech-info">
+                            <h5 class="tech-header">PostgreSQL</h5>
+                        </div>
+                        <div class="tech-info">
+                            <h5 class="tech-header">Express</h5>
+                        </div>
                     </div>
-                    <div class="tech-info">
+                </section>
+            </div>
+
+            <div class="project-card">
+                <h3 class="project-name">Habit Tracker</h3>
+                <p>An application to keep track of your daily habits.</p>
+                <img src="./images/htlanding.PNG" alt="HabitTracker screenshot" />
+            </div>
+            <div class="project-information bb">
+                <div class="links">
+                    <a href="https://github.com/nrrao/habitTracker-client" target="_blank"
+                        class="project-button">Code</a>
+                    <a href="https://nandana-habittracker-app.now.sh/" target="_blank" class="project-button">Link</a>
+                </div>
+
+                <section class="tech">
+                    <h4 class="made-with">Made With</h4>
+                    <div class="tech-used">
+                        <div class="tech-info">
+                            <h5 class="tech-header">React</h5>
+                        </div>
+                        <div class="tech-info">
+                            <h5 class="tech-header">Node.js</h5>
+                        </div>
+                        <div class="tech-info">
+                            <h5 class="tech-header">PostgreSQL</h5>
+                        </div>
+                        <div class="tech-info">
+                            <h5 class="tech-header">Express</h5>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="project-card">
+                <h3 class="project-name">Learn Morse Code</h3>
+                <p>
+                    A learning application to assist in learning Morse code using spaced
+                    repetition..
+                </p>
+                <img src="./images/mclanding.PNG" alt="HabitTracker screenshot" />
+            </div>
+            <div class="project-information">
+                <div class="links">
+                    <a href="https://github.com/thinkful-ei-gecko/quasar-nandana-spaced-repetition-client"
+                        target="_blank" class="project-button">Code</a>
+                    <a href="https://m-o-r-s-e.now.sh/" target="_blank" class="project-button">Link</a>
+                </div>
+
+                <section class="tech">
+                    <h4 class="made-with">Made With:</h4>
+                    <div class="tech-used">
+                        <div class="tech-info">
+                            <h5 class="tech-header">React</h5>
+                        </div>
+                        <div class="tech-info">
                             <!-- <img src="./images/css.png" alt="CSS logo" /> -->
                             <h5 class="tech-header">Node.js</h5>
                         </div>
                         <div class="tech-info">
-                            
                             <h5 class="tech-header">PostgreSQL</h5>
                         </div>
-                            <div class="tech-info"> 
-                            
+                        <div class="tech-info">
                             <h5 class="tech-header">Express</h5>
                         </div>
                     </div>
-                    </section>
-                </div>
-                <div class="project-card">
-                        <h3 class="project-name">Habit Tracker</h3>
-                        <p>An application to keep track of your daily habits.</p>
-                        <img src="./images/htlanding.PNG" alt="HabitTracker screenshot">
-                    </div>
-                        <div class="project-information">
-                            <div class="links">
-                             <a href="https://github.com/nrrao/habitTracker-client" target="_blank" class="project-button">Code</a>
-                             <a href="https://nandana-habittracker-app.now.sh/" target="_blank" class="project-button">Link</a>
-                        </div>
-                        
-                        <section class="tech" >
-                        <h3 class="made-with">Made With:</h3> 
-                        <div class="tech-used">
-                        <div class="tech-info">
-                                
-                                <h5 class="tech-header">React</h5>
-                        </div>
-                        <div class="tech-info">
-                                <!-- <img src="./images/css.png" alt="CSS logo" /> -->
-                                <h5 class="tech-header">Node.js</h5>
-                            </div>
-                            <div class="tech-info">
-                                
-                                <h5 class="tech-header">PostgreSQL</h5>
-                            </div>
-                                <div class="tech-info"> 
-                                
-                                <h5 class="tech-header">Express</h5>
-                            </div>
-                        </div>
-                        </section>
-                    </div>
-                           
-                    <div class="project-card">
-                            <h3 class="project-name">Learn Morse Code</h3>
-                            <p>A learning application to assist in learning Morse code using spaced repetition..</p>
-                            <img src="./images/mclanding.PNG" alt="HabitTracker screenshot">
-                        </div>
-                            <div class="project-information">
-                                <div class="links">
-                                 <a href="https://github.com/thinkful-ei-gecko/quasar-nandana-spaced-repetition-client" target="_blank" class="project-button">Code</a>
-                                 <a href="https://m-o-r-s-e.now.sh/" target="_blank" class="project-button">Link</a>
-                            </div>
-                            
-                            <section class="tech" >
-                            <h3 class="made-with">Made With:</h3> 
-                            <div class="tech-used">
-                            <div class="tech-info">
-                                    
-                                    <h5 class="tech-header">React</h5>
-                            </div>
-                            <div class="tech-info">
-                                    <!-- <img src="./images/css.png" alt="CSS logo" /> -->
-                                    <h5 class="tech-header">Node.js</h5>
-                                </div>
-                                <div class="tech-info">
-                                    
-                                    <h5 class="tech-header">PostgreSQL</h5>
-                                </div>
-                                    <div class="tech-info"> 
-                                    
-                                    <h5 class="tech-header">Express</h5>
-                                </div>
-                            </div>
-                            </section>
-                        </div>
-                               
- 
+                </section>
+            </div>
         </section>
-
     </main>
-    <footer id="contact"> 
+    <footer id="contact">
         <h3>Contact Info</h3>
         <div class="contact-info">
             <span class="contact-unit">
@@ -188,4 +191,5 @@
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="./index.js"></script>
 </body>
+
 </html>

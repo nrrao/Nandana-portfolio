@@ -1,4 +1,4 @@
-/* global $ */
+
 
 
 
@@ -11,17 +11,18 @@ $('nav').find('a').not( ':last-child' ).click(function(e) {
   });
 });
 
-
-$('nav').find('a').last().click(function myFunction() {
-  let x = document.getElementById('myTopNav');
-  let f = document.getElementById('fafa');
-  if (x.className === 'navbar') {
-    x.className += ' responsive';
-    f.className = 'fa fa-close';
-    
+function toggleMobileMenu() {
+  let menu = document.getElementById('nav-bar');
+     
+  if (menu.style.display === 'block') {
+    menu.style.display = 'none';
+    document.getElementById('icon').classList.remove('fa-times');
+    document.getElementById('icon').classList.add('fa-bars');
   } else {
-    x.className = 'navbar';
-    f.className = 'fa fa-bars';
+    menu.style.display = 'block';
+    document.getElementById('icon').classList.remove('fa-bars');
+    document.getElementById('icon').classList.add('fa-times');
   }
-});
+}
+     
 

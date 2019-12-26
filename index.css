@@ -5,7 +5,7 @@
 body {
   font-family: "Open Sans",
   sans-serif; 
-  font-size: 20px;
+  font-size: 16px;
   color: #444;
   text-align: center;
   line-height: 1.5;
@@ -19,15 +19,16 @@ h1{
   font-family: 'Sacramento', cursive;
   color: #1fab89;
   font-weight: bold;
+  font-size: 2.5 rem;
 }
-h2,h3{
+h2,h3,h4{
   font-family: 'Montserrat', sans-serif;
   
 }
 h2{
   color: #1fab89;
 }
-h3{
+h3,h4{
   color:#00a79d;
 }
 
@@ -36,49 +37,46 @@ nav {
   height: 3rem;
   position:fixed;
   background-color:#ecf4f3;
+  
+}
+
+#nav-bar {
+  display: none;
+  padding: 0;
+  font-weight: 600;
+  position: absolute;
+  top: -15px;
+  width: 100%;
+  background-color:#ecf4f3;
+  line-height: 2.5;
 }
 
 .navbar a {
-  display: none;
-  color: #1fab89;
-  text-decoration: none;
-  margin-top: 1rem;
-  text-align: center;
-  margin-left: 1rem;
-}
-
-.navbar a.icon {
-  float: right;
+  float: none;
   display: block;
+  text-decoration: none;
+  color: #1fab89;
+  margin-top: 1rem;
+  text-align: left;
+  margin-left: 1rem;
+  margin-right: 2rem;
 }
-
 .navbar a:hover {
   color: black;
   cursor: pointer;
 } 
-.fa{
-  color: #1fab89;
-  
-}
-
-i{
-  margin-right:5px;
-}
-
-.navbar.responsive {position: relative; background-color:#ecf4f3;}
-.navbar.responsive .icon {
+.icon {
   position: absolute;
   right: 0;
   top: 0;
+  margin-top: 10px;
+  margin-right: 20px;
+  font-size: 25px;
+  
 }
-.navbar.responsive a:not(:last-child) {
-  float: none;
-  display: block;
-  text-align: left;
-  background-color:#ecf4f3;
-  margin-right: 2rem;
-}
-
+.fa{
+  color: #1fab89;
+  }
 
 main {
   display: flex;
@@ -112,9 +110,10 @@ main section hr {
  
 }
 
-#skills-section h2 {
-  font-size: 2.5rem;
-  margin: 0
+#skills h2 {
+  font-size: 2.5rem; 
+  margin-top: 0;
+  margin-bottom: 0;
 }
 #skills-section h3{
   margin-top: 1rem;
@@ -141,10 +140,10 @@ hr{
   width:4%
 }
 
+
 #projects {
   width:100%;
-  border: black;
-  border-width: 5px;
+
 }
 .project-card{
   display: flex;
@@ -153,7 +152,7 @@ hr{
   align-items: center;
   width:100%;
   margin: 0;
-  border: 3px black;
+
 }
 .project-card img{
   width: 90%;
@@ -166,8 +165,13 @@ hr{
   margin: 0
 }
 #projects h3{
+  font-size: 1.5rem;
+  background-color: #ecf4f3;
   margin-top: 1rem;
   margin-bottom: 0;
+  margin-top: 2rem;
+  padding: 12px 30px;
+  border-radius: 15px;
 }
 
 
@@ -176,7 +180,10 @@ hr{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin:0px;
+}
+
+.bb{
+  border-bottom: solid 1px;
 }
 
 .project-information img{
@@ -214,7 +221,7 @@ width:100%;
 .links a{
   color:#1fab89;
   font-weight: bold;
-  background-color: #ecf4f3;
+  background-color: #ecf4f3; 
   text-decoration: none;
   text-align: center;
   margin-top: 1rem;
@@ -240,6 +247,7 @@ footer h3{
 .contact-info {
   display: flex;
   justify-content: space-evenly;
+  margin-top: 10px;
 }
 
 .contact-unit a{
@@ -261,19 +269,42 @@ footer h3{
     position:fixed;
     background-color:#ecf4f3;
   }
-
+  .icon {
+    display: none !important;
+  }
+  #nav-bar {
+     display: flex !important; 
+    justify-content: flex-end;
+    align-items: center;
+  }
   .navbar a {
     display: inherit;
     float: left;
     color: #1fab89;
     text-decoration: none;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     text-align: center;
     margin-left: 1rem;
   }
-  .navbar a.icon {
-    float: right;
-    display: none;  
+}
+  
+
+@media only screen and (min-width:750px) {
+
+  .project-information{
+    width:90%;
+    margin:auto;
+  } 
+
+}
+
+@media screen and (min-width: 1000px) {
+  h1{
+    font-size: 2.5rem;
+  }
+  .project-information{
+    width:80%;
+    margin:auto;
   }
 
   .project-card img{
@@ -282,6 +313,7 @@ footer h3{
   }
 
   .tech{
-    width:40%;
+    width:60%;
     }
+
 }
